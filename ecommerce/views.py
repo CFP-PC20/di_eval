@@ -20,7 +20,7 @@ def catalogo (request):
 
 def detalle (request, key):
     articulo = Articulo.objects.get(pk=key)
-    context={
+    context = {
         'articulo': articulo
     }
     return render(request,'detalle.html',context)
