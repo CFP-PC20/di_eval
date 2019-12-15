@@ -1,0 +1,44 @@
+{% load static %}
+
+{% block navbarbasics %}
+
+    <script>
+        function logo_hover(element) {
+            element.setAttribute('src', "{% static 'img/brand/logo.png' %}");
+        }
+
+        function logo_unhover(element) {
+            element.setAttribute('src', "{% static 'img/brand/logo2.png' %}");
+        }
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark jjv-blue1-bg navbar-static-top">
+
+        <a class="navbar-brand" href="/">
+        <div>
+            <img src="{% static 'img/brand/logo.png' %}"
+                onmouseover="logo_hover(this);"
+                onmouseout="logo_unhover(this);"
+                style="max-height:30px;object-fit:cover; ">
+            </div>
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item light-link">
+                    <a class="nav-link {% if urlis == "catalogo" %} active {% endif %} " href="{% url 'catalogo' %}">Catálogo</a>
+                </li>
+                <li class="nav-item light-link">
+                    <a class="nav-link {% if urlis == "contacto" %} active {% endif %} " href="{% url 'contacto' %}">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+{% endblock %}

@@ -1,12 +1,18 @@
-/* variables */
+/* body */
+body {
+    min-height: 100vh;
+    height: 100%;
+}
+
+/* color palette */
 
 :root {
     --jjv-dark: rgb(23, 26, 33);
     --jjv-brown: rgb(127, 86, 77);
-    --jjv-blue1: rgb(122, 147, 172);
-    --jjv-blue2: rgb(146, 188, 234);
-    --jjv-yellow1: rgb(252, 233, 151);
-    --jjv-yellow2: rgb(252, 215, 61);
+    --jjv-blue1: rgb(90, 104, 126);
+    --jjv-blue2: rgb(45, 48, 59);
+    --jjv-yellow1: rgb(252, 215, 61);
+    --jjv-yellow2: rgb(252, 233, 151);
 }
 
 .jjv-dark {
@@ -59,20 +65,28 @@
 
 /* links */
 
-a.light-link {
+.light-link {
     color: var(--jjv-yellow2);
     text-decoration: underline;
 }
 
-a.light-link:focus,
-a.light-link:active {
+.light-link:focus,
+.light-link:active {
     color: var(--jjv-yellow1);
     text-decoration: underline;
 }
 
-a.light-link:hover {
+.light-link:hover {
     color: var(--jjv-yellow2);
     text-decoration: underline;
 }
 
+.expand {
+    height: 100%;
+}
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

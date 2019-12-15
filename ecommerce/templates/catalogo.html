@@ -2,6 +2,26 @@
 
 {% load static %}
 
-{% block page_content %}
+{% block content %}
 
+    {% include "navbar.html" with urlis="catalogo" %}
+
+    <div class="container">
+        <div class="row">
+            {% for articulo in articulos %}
+            <div class="col-sm-4 col-md-3 col-xl-3">
+                <div class="card mb-2">
+                    <a class="expand" href="{%url 'detalle' articulo.id %}">
+                        <img class="card-img-top" src="{% static articulo.imagen %}">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ articulo.nombre }}</h5>
+                        <p class="card-text">{{ articulo.precio }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
 {% endblock %}

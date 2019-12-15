@@ -1,11 +1,11 @@
 from django.db import models
-from django.conf import settings
+from djmoney.models.fields import MoneyField
 
 # Create your models here.
 
 class Articulo(models.Model):
     nombre = models.CharField(max_length=80)
-    precio = models.FloatField()
+    precio = MoneyField(max_digits=14, decimal_places=2, default_currency='EUR')
     descripcion = models.TextField()
     imagen = models.FilePathField(path="/img")
 
