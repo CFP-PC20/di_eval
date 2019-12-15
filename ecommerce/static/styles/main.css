@@ -120,6 +120,7 @@ footer {
     text-align: center;
     background-color: #0009;
     padding: 40px;
+    border-radius: 5px;
 }
 
 .home_header h1 {
