@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import Articulo
 
 
-def home(request):
+def home (request):
     articulos = Articulo.objects.all()
     context = {
         'articulos': articulos
@@ -10,17 +10,21 @@ def home(request):
     return render(request,'home.html',context)
 
 
-def product_index(request):
+def catalogo (request):
     articulos = Articulo.objects.all()
     context = {
         'articulos': articulos
     }
-    return render(request,'product_index.html',context)
+    return render(request,'catalogo.html',context)
 
 
-def product_detail(request,key):
+def detalle (request, key):
     articulo = Articulo.objects.get(pk=key)
     context={
         'articulo': articulo
     }
-    return render(request,'product_detail.html',context)
+    return render(request,'detalle.html',context)
+
+
+def contacto (request):
+    return render(request,'contacto.html', {})

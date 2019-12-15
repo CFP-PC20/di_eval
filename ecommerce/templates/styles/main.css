@@ -1,0 +1,49 @@
+:root {
+    --jjv-dark: rgb(23, 26, 33);
+    --jjv-brown: rgb(127, 86, 77);
+    --jjv-blue1: rgb(122, 147, 172);
+    --jjv-blue2: rgb(146, 188, 234);
+    --jjv-yellow: rgb(252, 233, 151);
+}
+
+.jjv-dark {
+    color: var(--jjv-dark)
+}
+
+.jjv-dark-bg {
+    background-color: var(--jjv-dark);
+}
+
+.jjv-brown {
+    color: var(--jjv-brown)
+}
+
+.jjv-brown-bg {
+    background-color: var(--jjv-brown);
+}
+
+.jjv-blue1 {
+    color: var(--jjv-blue1)
+}
+
+.jjv-blue1-bg {
+    background-color: var(--jjv-blue1);
+}
+
+.jjv-blue2 {
+    color: var(--jjv-blue2)
+}
+
+.jjv-blue2-bg {
+    background-color: var(--jjv-blue2);
+}
+
+.jjv-yellow {
+    color: var(--jjv-yellow)
+}
+
+.jjv-yellow-bg {
+    background-color: var(--jjv-yellow);
+}
+
+
