@@ -1,0 +1,78 @@
+/* variables */
+
+:root {
+    --jjv-dark: rgb(23, 26, 33);
+    --jjv-brown: rgb(127, 86, 77);
+    --jjv-blue1: rgb(122, 147, 172);
+    --jjv-blue2: rgb(146, 188, 234);
+    --jjv-yellow1: rgb(252, 233, 151);
+    --jjv-yellow2: rgb(252, 215, 61);
+}
+
+.jjv-dark {
+    color: var(--jjv-dark)
+}
+
+.jjv-dark-bg {
+    background-color: var(--jjv-dark);
+}
+
+.jjv-brown {
+    color: var(--jjv-brown)
+}
+
+.jjv-brown-bg {
+    background-color: var(--jjv-brown);
+}
+
+.jjv-blue1 {
+    color: var(--jjv-blue1)
+}
+
+.jjv-blue1-bg {
+    background-color: var(--jjv-blue1);
+}
+
+.jjv-blue2 {
+    color: var(--jjv-blue2)
+}
+
+.jjv-blue2-bg {
+    background-color: var(--jjv-blue2);
+}
+
+.jjv-yellow1 {
+    color: var(--jjv-yellow1)
+}
+
+.jjv-yellow1-bg {
+    background-color: var(--jjv-yellow1);
+}
+
+.jjv-yellow2 {
+    color: var(--jjv-yellow2)
+}
+
+.jjv-yellow2-bg {
+    background-color: var(--jjv-yellow2);
+}
+
+/* links */
+
+a.light-link {
+    color: var(--jjv-yellow2);
+    text-decoration: underline;
+}
+
+a.light-link:focus,
+a.light-link:active {
+    color: var(--jjv-yellow1);
+    text-decoration: underline;
+}
+
+a.light-link:hover {
+    color: var(--jjv-yellow2);
+    text-decoration: underline;
+}
+
+
