@@ -1,9 +1,21 @@
 /* body */
-body {
+html {
     min-height: 100vh;
     height: 100%;
+    box-sizing: border-box;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+}
 /* color palette */
 
 :root {
@@ -66,13 +78,13 @@ body {
 /* links */
 
 .light-link {
-    color: var(--jjv-yellow2);
+    color: var(--jjv-yellow1);
     text-decoration: underline;
 }
 
 .light-link:focus,
 .light-link:active {
-    color: var(--jjv-yellow1);
+    color: var(--jjv-yellow2);
     text-decoration: underline;
 }
 
@@ -86,7 +98,44 @@ body {
 }
 
 footer {
-    position: absolute;
     bottom: 0;
+    position: absolute;
     width: 100%;
+}
+
+/* catalogo */
+.equal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equal div {
+    padding-bottom: 20px;
+}
+
+.equal div {
+    padding-bottom: 20px;
+}
+
+/* detalle */
+.number-buy {
+    max-width: 150px;
+    border-radius: 5px 0px 0px 5px !important;
+}
+
+.button-buy {
+    border-radius: 0px 5px 5px 0px !important;
+    background-color: var(--jjv-yellow1) !important;
+    border-color: var(--jjv-yellow1) !important;
+    transition: 0.1ms;
+}
+
+.button-buy:focus,
+.button-buy:hover {
+    background-color: var(--jjv-yellow2) !important;
+    border-color: var(--jjv-dark) !important;
+}
+
+.button-buy * {
+    color: var(--jjv-dark)  !important;
 }

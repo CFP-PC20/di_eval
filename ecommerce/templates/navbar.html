@@ -4,19 +4,19 @@
 
     <script>
         function logo_hover(element) {
-            element.setAttribute('src', "{% static 'img/brand/logo.png' %}");
+            element.setAttribute('src', "{% static 'img/brand/logo_mini.png' %}");
         }
 
         function logo_unhover(element) {
-            element.setAttribute('src', "{% static 'img/brand/logo2.png' %}");
+            element.setAttribute('src', "{% static 'img/brand/logo2_mini.png' %}");
         }
     </script>
 
-    <nav class="navbar navbar-expand-lg navbar-dark jjv-blue1-bg navbar-static-top">
+    <nav class="navbar navbar-expand-lg navbar-dark jjv-blue1-bg navbar-static-top fixed-top">
 
         <a class="navbar-brand" href="/">
         <div>
-            <img src="{% static 'img/brand/logo.png' %}"
+            <img src="{% static 'img/brand/logo2_mini.png' %}"
                 onmouseover="logo_hover(this);"
                 onmouseout="logo_unhover(this);"
                 style="max-height:30px;object-fit:cover; ">
@@ -40,5 +40,7 @@
         </div>
     </nav>
 
+    <br>
+    <br>
     <br>
 {% endblock %}

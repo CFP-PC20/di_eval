@@ -9,9 +9,9 @@
     <div class="container">
         <div class="row">
             {% for articulo in articulos %}
-            <div class="col-sm-4 col-md-3 col-xl-3">
-                <div class="card mb-2">
-                    <a class="expand" href="{%url 'detalle' articulo.id %}">
+            <div class="col-sm-4 col-md-3 col-xl-3 equal">
+                <div class="card mb-2 d-flex flex-column justify-content-between">
+                    <a class="expand flex-fill" href="{%url 'detalle' articulo.id %}">
                         <img class="card-img-top" src="{% static articulo.imagen %}">
                     </a>
                     <div class="card-body">

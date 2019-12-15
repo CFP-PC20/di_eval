@@ -4,4 +4,36 @@
 
 {% block content %}
 
+    {% include "navbar.html" with urlis="detalle" %}
+
+    <div class="container dark-grey-text py-6">
+        <div class="card p-4">
+            <div class="row">
+                <div class="col-md-4 p-4">
+                    <img src="{% static articulo.imagen %}" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-md-8">
+                    <div class="p-4">
+                        <h2>{{articulo.nombre}}</h2>
+                        <p class="lead">
+                            <span>{{articulo.precio}}</span>
+                        </p>
+
+                        <form class="d-flex justify-content-left">
+                            <input type="number" value="1" aria-label="Search" class="form-control number-buy">
+                            <button class="btn btn-primary btn-md p button-buy" type="submit">
+                                <i class="fas fa-shopping-cart" style="vertical-align: middle;"></i> <span class="jjv-dark">Comprar</span>
+                            </button>
+                        </form>
+
+                        <hr>
+
+                        <p>{{articulo.descripcion}}</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
