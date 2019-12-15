@@ -103,6 +103,43 @@ footer {
     width: 100%;
 }
 
+/* home */
+#carousel {
+    overflow-clip: hidden;
+    height: 550px;
+}
+
+
+.home_header {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: #0009;
+    padding: 40px;
+}
+
+.home_header h1 {
+    font-size: 60px;
+}
+
+.home_header button {
+    background-color: var(--jjv-yellow1) !important;
+    border-color: var(--jjv-yellow1) !important;
+    color: var(--jjv-dark);
+    transition: 0.1s;
+}
+
+.home_header button:focus,
+.home_header button:hover {
+    background-color: var(--jjv-yellow2) !important;
+    color: var(--jjv-dark);
+    transition: 0.1s;
+}
+
 /* catalogo */
 .equal {
     display: flex;
@@ -127,13 +164,14 @@ footer {
     border-radius: 0px 5px 5px 0px !important;
     background-color: var(--jjv-yellow1) !important;
     border-color: var(--jjv-yellow1) !important;
-    transition: 0.1ms;
+    transition: 0.1s;
 }
 
 .button-buy:focus,
 .button-buy:hover {
     background-color: var(--jjv-yellow2) !important;
     border-color: var(--jjv-dark) !important;
+    transition: 0.1s;
 }
 
 .button-buy * {
